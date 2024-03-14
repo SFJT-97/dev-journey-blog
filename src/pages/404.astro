@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Hero from '../components/heroerror.astro'
+
+import { slide } from 'astro:transitions';
+
+const title = "Oops! Wild 404 appears"
+
+---
+
+<Layout title={title}>
+    <main transition:animate={slide({ duration: '0.4s' })} >
+		<Hero />
+	</main>
+</Layout>

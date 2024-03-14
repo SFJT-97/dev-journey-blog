@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Hero from '../components/hero.astro';
+
+import Content from '../components/content.astro'
+
+import { slide, fade } from 'astro:transitions';
+
+const title = "Just Me, walking the Path"
+
+---
+
+<Layout title={title} >
+	<main transition:animate={slide({ duration: '0.4s' })}>
+		<Hero />
+	</main>
+	<section transition:animate={fade({ duration: '1s' })}>
+		<Content />
+	</section>
+</Layout>
+
+<style>
+    section {
+        display: flex;
+
+		align-items: center;
+
+        flex-direction: column;
+    }
+</style>

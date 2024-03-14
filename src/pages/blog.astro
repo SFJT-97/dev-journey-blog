@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Hero from '../components/heroblog.astro'
+
+import BItem from '../components/blogitem.astro'
+
+import { slide, fade } from 'astro:transitions';
+
+const title = "Welcome to my Blog!"
+
+---
+
+<Layout title={title} >
+    <main transition:animate={slide({ duration: '0.4s' })} >
+		<Hero />
+	</main>
+    <section transition:animate={fade({ duration: '1s' })}>
+        <BItem />
+        <BItem />
+    </section>
+</Layout>
+
+<style>
+    section {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+
+        flex-direction: column;
+    }
+</style>

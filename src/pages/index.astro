@@ -13,7 +13,7 @@ const title = "Just Me, walking the Path"
 
 <Layout title={title} >
 	<main transition:animate={slide({ duration: '0.4s' })}>
-		<Hero />
+		<Hero client:load />
 	</main>
 	<section transition:animate={fade({ duration: '1s' })}>
 		<Content />

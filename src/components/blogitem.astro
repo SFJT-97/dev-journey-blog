@@ -1,3 +1,7 @@
+---
+const { title, description, url } = Astro.props;
+---
+
 <style>
     .container {
         display: flex;
@@ -48,17 +52,17 @@
 
         <div>
             <h2>
-                Blog Title
+                {title}
             </h2>
         </div>
 
         <div>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil a aspernatur quidem possimus saepe, tenetur natus vel reprehenderit veniam suscipit provident atque sequi! Libero ratione laudantium reprehenderit! Neque, quaerat.
+                {description}
             </p>
         </div>
 
     </div>
 
-        <a href="#" class="button"> Go! </a>
+        <a href={url} class="button"> Go! </a>
 </div>

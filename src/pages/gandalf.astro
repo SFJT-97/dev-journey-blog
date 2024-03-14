@@ -3,12 +3,14 @@ import Layout from "../layouts/Layout.astro"
 
 import Content from "../components/coffeepage.astro"
 
+import { fade } from 'astro:transitions';
+
 const title = "I have no memory of this place..."
 
 ---
 
 <Layout title={title}>
-    <main>
+    <main transition:animate={fade({ duration: '0.85s' })}>
         <Content />
     </main>
 </Layout>

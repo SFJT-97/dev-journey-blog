@@ -1,0 +1,58 @@
+---
+import BaseLayout from './Layout.astro'
+
+const { frontmatter } = Astro.props
+
+---
+<BaseLayout title={frontmatter.title}>
+    <section>
+        <div class="blog__head">
+            <h1>
+                {frontmatter.title}
+            </h1>
+        
+            <p> 
+                {frontmatter.pubDate.toString().slice(0,10)}
+            </p>
+
+            <p style="margin-bottom: 50px;">
+                <em>
+                    {frontmatter.description}
+                </em>
+            </p>
+        
+        </div>
+
+        <!-- <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} /> -->
+        <div class="content">
+            <slot />
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+
+    section {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .blog__head {
+        border-bottom-style: dashed;
+        border-width: 8px;
+        border-color: #3a3e4a;
+        border-radius: 25%;
+    }
+
+    .content {
+        text-align: left;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+</style>

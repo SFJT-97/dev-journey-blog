@@ -7,7 +7,9 @@ import BItem from '../components/blogitem.astro'
 
 import { slide, fade } from 'astro:transitions';
 
-const title = "Welcome to my Blog!"
+const title = "Welcome to my Blog!";
+
+const allPosts = await Astro.glob('../pages/posts/*.md');
 
 ---
 
@@ -16,8 +18,9 @@ const title = "Welcome to my Blog!"
 		<Hero />
 	</main>
     <section transition:animate={fade({ duration: '1s' })}>
-        <BItem />
-        <BItem />
+    {allPosts.map((post) => <BItem url={post.url} title={post.frontmatter.title} description={post.frontmatter.description} /> )}
+
+ 
     </section>
 </Layout>
 

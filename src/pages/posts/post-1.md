@@ -1,13 +1,14 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-
-title: 'The first step of my journey'
 pubDate: 14-03-2024
 description: 'So here it is, my first blog post!'
-tags: ["blogging", "rant"]
+tags:
+  - blogging
+  - rant
+title: The first step of my journey
 ---
 
-## Intro
+## Introduction
 
 Hi and welcome you to my personal blog!
 
@@ -17,7 +18,6 @@ The footer is giving me nightmares, but oh well... This blog is about the learni
 
 <br />
 <br />
-
 
 ## The first leg of my journey
 

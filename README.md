@@ -14,3 +14,11 @@
 - Create a Post
 - Commit to GitHub
 - Enjoy
+
+## TODO's
+- Fix Footer layout shift
+- Fix Footer not fixed at bottom
+- Fix SVG randomly not loading (use Astro's Image? Use Astro's Icons? Use: https://stackoverflow.com/questions/76052260/import-svg-file-in-astro-and-use-it-without-the-img-tag ?)
+- Remove Cookies from Gifs
+- Optimize Gifs
+- Style BlogItem "Go!" button

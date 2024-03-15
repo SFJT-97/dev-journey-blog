@@ -1,18 +1,19 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+
+title: The first step of my journey
 pubDate: 14-03-2024
 description: 'So here it is, my first blog post!'
 tags:
   - blogging
   - rant
-title: The first step of my journey
 ---
 
 ## Introduction
 
 Hi and welcome you to my personal blog!
 
-The idea of starting this project has been in my mind for a few weeks now, until finally I decided to do something about it. With the tools available today like Astro, Github, a headless CMS and Cloudfare, it didn't take long; a few hours during a sleepless night and *tada!* here it is. I tried to keep it minimal but functional while still somewhat cozy and appealing... I really like the end result tbh.
+The idea of starting this project has been on my mind for a few weeks now, until finally I decided to do something about it. With the tools available today like Astro, Github, TinaCMS and Cloudfare, it didn't take long; a few hours during a sleepless night and *tada!* here it is. I tried to keep it minimal but functional while still somewhat cozy and appealing... I really like the end result tbh.
 
 The footer is giving me nightmares, but oh well... This blog is about the learning journey I'm starting, so consider it a funny easter-egg until I can figure what to do with it.
 

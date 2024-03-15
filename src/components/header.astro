@@ -1,4 +1,11 @@
+---
+
+import Coffee from '../assets/coffeesmall.svg?raw'
+
+---
+
 <!-- Falta hacerlo Responsive -->
+
 
 <style>
     .container {
@@ -44,8 +51,8 @@
 
 <div class="container">
     <div>
-        <a href="/gandalf" aria-label="logo button" >
-            <img style="width: 36px" src="/favicon.svg" alt="Coffee Logo">
+        <a class="link" href="/gandalf" aria-label="Line art coffee logo button" >
+            <Fragment set:html={Coffee} aria-label="Coffee line art" />
         </a>
     </div>
 

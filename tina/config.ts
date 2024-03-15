@@ -26,18 +26,32 @@ export default defineConfig({
     },
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
+
+  //* Not urgent: Configure date field to datetime instead of string
   schema: {
     collections: [
       {
         name: "post",
         label: "Posts",
-        path: "src/pages/posts",
+        path: "src/content/posts",
         fields: [
           {
             type: "string",
             name: "title",
             label: "Title",
             isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "pubDate",
+            label: "Date",
             required: true,
           },
           {

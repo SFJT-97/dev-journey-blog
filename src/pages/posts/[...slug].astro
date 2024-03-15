@@ -1,0 +1,22 @@
+@ts-ignore
+---
+import { getCollection } from 'astro:content';
+import MarkdownPostLayout from '../../layouts/MarkdownPostLayout.astro';
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('posts');
+  return blogEntries.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+
+const { Content } = await entry.render();
+---
+
+<!-- @ts-ignore is used because throws errors when code is correct -->
+
+<MarkdownPostLayout frontmatter={entry.data}> 
+    <Content />
+</MarkdownPostLayout>

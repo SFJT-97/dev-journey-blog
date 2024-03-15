@@ -1,3 +1,9 @@
+---
+import Sun from '../assets/sun.svg?raw';
+
+---
+
+
 <style>
     .container {
         display: flex;
@@ -20,6 +26,7 @@
     </h1>
 
     <div style="text-align: center">
-        <img style="width: 65px; height: 65px"  src="./sun.svg" alt="Sun Minimalistic Art">
+        <!-- <img style="width: 65px; height: 65px"  src="./sun.svg" alt="Sun Minimalistic Art"> -->
+        <Fragment set:html={Sun} aria-label="Sun line art" /> 
     </div>
 </div>

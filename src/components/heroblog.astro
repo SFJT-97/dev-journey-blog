@@ -1,3 +1,9 @@
+---
+
+import Coffee from '../assets/coffee.svg?raw';
+
+---
+
 <style>
     .container {
         display: flex;
@@ -11,7 +17,7 @@
         font-weight: 900;
     }
 
-    img {
+    video {
         width: 100%;
         max-width: 450px;
         height: auto;
@@ -34,10 +40,12 @@
     </h1>
 
     <div style="text-align: center">
-        <img style="width: 65px; height: 65px" src="./coffee.svg" alt="Coffee Minimalistic Art">
+        <Fragment set:html={Coffee} aria-label="Coffe line art" />
     </div>
 
     <div class="img__container">
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWxyMG1tbXZjNXo3N2k3M3V4c2kyMzBpeDh3eGhydnhycndra3hhdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JHg1bLBxmVcre/giphy.gif" alt="Pippin quote from Lord of the Rings. Home is behind, the world is ahead">
+        <video autoplay loop muted playsinline aria-label="Small video on a loop. Quote from the Lord of the Rings from Pippin: Home is behind, the world ahead" >
+            <source src="./pippin.webm" type="video/webm" />
+        </video>
     </div>
 </div>

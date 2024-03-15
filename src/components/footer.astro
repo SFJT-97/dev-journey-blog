@@ -1,3 +1,12 @@
+---
+
+import Code from '../assets/code.svg?raw';
+import Coffee from '../assets/coffeesmall.svg?raw';
+import Heart from '../assets/heart.svg?raw'
+
+---
+
+
 <style>
     .container {
         display: flex;
@@ -5,18 +14,14 @@
         justify-content: center;
 
         text-align: center;
-
-        transition: 0.5s;
     }
 
-    .container:hover {
-        scale: 1.1;
-    }
 
     p {
         font-size: 12px;
         font-weight: 300;
     }
+
 </style>
 
 <div class="container">
@@ -24,8 +29,8 @@
         Made with 
     </p>
     <div style="align-items: center;">
-        <img style="width: 15px;" src="./code.svg" alt="Code symbol outline">
-        <img style="width: 15px" src="./coffee.svg" alt="Coffee symbol outline">
-        <img style="width: 15px" src="./heart.svg" alt="Heart symbol outline">
+        <Fragment set:html={Code} aria-label="Code line art" />
+        <Fragment set:html={Coffee} aria-label="Coffee line art" />
+        <Fragment set:html={Heart} aria-label="Heart line art" />
     </div>
 </div>

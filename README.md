@@ -16,4 +16,6 @@
 ## TODO's
 - Make NavBar (header.astro) responsive
 - Fix Footer not fixed at bottom
+- Add "Next" and "Previous" buttons to individual posts
+- Sync Tina Cloud's Media Manager
 - Style BlogItem "Go!" button

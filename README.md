@@ -2,6 +2,7 @@
 - Astro (HTML, CSS, Markdown, JavaScript)
 - GitHub
 - TinaCMS (Headless CMS)
+- TinaCloud (Production admin access to TinaCMS)
 - Cloudfare (Hosting)
 
 ## How I work on the page?
@@ -9,11 +10,8 @@
 - Keep it basic, no going overhead (vanilla code first, and the least amount of dependencies, libraries or frameworks possible)
 
 ## How posting works?
-- Run 'npm run dev'
-- Enter admin link provided by TinaCMS.
-- Create a Post
-- Commit to GitHub
-- Enjoy
+- TinaCMS and TinaCloud push to GitHub repository
+- Cloudflare updates website when GitHub's main branch is updated
 
 ## TODO's
 - Make NavBar (header.astro) responsive

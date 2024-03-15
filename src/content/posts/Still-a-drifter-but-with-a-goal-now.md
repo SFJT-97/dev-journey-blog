@@ -10,4 +10,8 @@ Hello again! I've playing around with [TinaCMS](https://tina.io/ "TinaCMS"), [Ti
 
 ## Where to now?
 
-Looking around [Roadmap](https://roadmap.sh/ "Roadmap") I found as a fitting place to start the ["Data Structures & Algorithms"](https://roadmap.sh/datastructures-and-algorithms "\"Data Structures & Algorithms\"") and ["Computer Science"]()
+Looking around [Roadmap](https://roadmap.sh/ "Roadmap") I found that the ["Data Structures & Algorithms"](https://roadmap.sh/datastructures-and-algorithms "\"Data Structures & Algorithms\"") and ["Computer Science"]() as good places to get started in my journey. Both recommend to pick a language, but I'm leaning towards using as many as I can from the recommended ones, whenever possible anyways... Python and Java are a big thing in my college so picking those is a no brainer, and I recently got my first MacBook so learning C related languages would be nice for later delving into Swift.
+
+The main goal, at least for now, is not to become a pro in those languages, but understand the fundamentals that are used when coding with them and that are applicable to any of the aforementioned languages or any others.
+
+While I'm not entirely new to some concepts or things I'm going to start doing, I really meant it when I said that I was going back to the basics. So, for the purposes of this blog and my journey, I'm a complete beginner... An eager to learn beginner.
